@@ -9,6 +9,7 @@ import { SearchPanelContainer } from 'components/SearchPanel/SearchPanelContaine
 import { TopBarComponent } from 'components/TopBar/TopBarComponent';
 import { UploadStatusButton } from 'components/Uploads/UploadStatusButton';
 import { UploadButton } from 'components/Uploads/UploadButton';
+import { NotesDetailsComponent } from 'components/NotesDetails/NotesDetailsComponent';
 
 export class NotesPageComponent extends Component {
   render() {
@@ -19,6 +20,7 @@ export class NotesPageComponent extends Component {
         <NotesMindMapContainer />
         <TopBarComponent />
         <NotesContentEditorContainer />
+        <NotesDetailsComponent />
         {!isHelpViewed && <ControlsHelpComponent onClose={closeHelp} />}
         <SearchPanelContainer />
         <LogoutButtonContainer />
